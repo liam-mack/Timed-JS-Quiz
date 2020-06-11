@@ -1,0 +1,95 @@
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+    background-color: rgb(51,51,51);
+    color: rgb(102,153,153);
+    font-size: 34px;
+    text-align: center;
+    padding: 1em;
+}
+
+p{
+    margin: 5%;
+}
+td{
+    text-align: center;
+}
+th{
+    width:50%;
+}
+
+header{
+    text-align: center;
+}
+
+body{
+    background-image: url("learning.png");
+    display:flex;
+    flex-direction: column;
+}
+
+form {
+    background-color: white;
+    color: navy;
+    border-radius: 25px;
+    max-width: 600px;
+    margin: auto;
+    display: block;
+    border: solid;
+    border-width: 5px;
+    border-color: navy;
+    text-align:center;
+}
+.wrapper {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.btn {
+    border: none;
+    background-color: navy;
+    border-radius: 25px;
+    color: hsl(0, 0%, 100%);
+    display: inline-block;
+    font-size: 22px;
+    margin: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+
+#initialInputs{
+    margin: auto;
+    text-align: center;
+}
+
+#resultsContainer {
+    background-color: white;
+    color: navy;
+    border-radius: 25px;
+    max-width: 600px;
+    margin: auto;
+    display: block;
+    border: solid;
+    border-width: 5px;
+    border-color: navy;
+    text-align: center;
+    display:none;
+}
+#resultsContainer .btn{
+    font-size:14px;
+    margin: 50px 0px 10px 0px;
+}
+
+
+
+

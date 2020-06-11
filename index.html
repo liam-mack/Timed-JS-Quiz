@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "style.css" rel="stylesheet" type="text/css">
+    <title>JS Quiz</title>
+</head>
+<body>
+    <div class = "wrapper">
+        <form id = "explanation">
+            <header>
+                <h1>JavaScript Quiz</h1>
+            </header>
+            <hr>
+            <p>
+                This is a timed quiz designed to test your understanding of JavaScript. 
+                After every incorrect answer, the user will have their timer reduced by 10sec. 
+                Please enter your name and desired time limit (in seconds), default values have been provided if nothing is entered.
+            </p>
+            <div id="initialInputs">
+                <input type="text" id="testee" name="name" value="User"/>
+                <input type="text" id="lengthInput" name="length" value="60"/></br>
+                <input type="button" id="startButton" class = "btn" value="Click to Begin"/>
+            </div>
+        </form>
+        <div id="resultsContainer">
+            <table id="finalScores" style="width:100%">
+                <tr>
+                    <th>Username</th>
+                    <th>Score</th>
+                </tr>
+                <!-- <tr>
+                    <td>ExampleName</td>
+                    <td>ExampleScore</td>
+                </tr> -->
+                
+            </table>
+            <input type="button" id="restartButton" class = "btn" value="Click to Try Again"/>
+            <input type="button" id="resetButton" class = "btn" value="Clear Saved Scores"/>
+        </div>
+        <form id="quizMaterial" style="display: none">
+            <h1>JavaScript Quiz</h1>
+            <div id="questionText"></div>
+            </hr>
+            <label class ="choice"><input type="radio" name="answer" value="1"/><span id="choice1"></span></label>
+            </br>
+            <label class ="choice"><input type="radio" name="answer" value="2"/><span id="choice2"></span></label>
+            </br>
+            <label class ="choice"><input type="radio" name="answer" value="3"/><span id="choice3"></span></label>
+            </br>
+            <label class ="choice"><input type="radio" name="answer" value="4"/><span id="choice4"></span></label>
+            </br>
+
+            <input type="button" id="answerSubmit" class="btn" value="Submit Answer">
+        </form>
+    </div>
+    <footer>
+        Inviligator says: <div id="proctorSays"></div>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+<script src="questions.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
